@@ -1,0 +1,200 @@
+/* Сброс стилей по умолчанию у ссылок
+a {
+  text-decoration: none;
+}*/
+/*Основной цвет текста
+ цвет заголовков #212121;
+цвет основного текста #757575
+ Вторичный цвет
+ телефон и мыло в футоре
+ color: rgba(255, 255, 255, 0.6);
+ Акцент
+ color: #2196F3(голубой)
+ вторичный цвет фона 
+ background: #F5F4FA
+шрифты основной 
+text font-family:Roboto
+logo font-family: Raleway*/
+/* Вводим список переменных*/
+:root {
+  --header-contacts-color: #757575;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --footer-contacts-rgba-color: rgba(255, 255, 255, 0.6);
+  --primary-white-main: #ffffff;
+  --background-hero-footer: #2f303a;
+  --background-team-section: #f5f4fa;
+}
+/* Добавление глобального стиля на тег body*/
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-main);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+/*Сброс стилей элементов текста и ссылок с помощью класса
+.list*/
+.list {
+  list-style: none;
+}
+.list a {
+  text-decoration: none;
+}
+
+/*Header*/
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/*Добавляем класс active для отображения текущей 
+страницы акцентом*/
+.site-nav .link.active {
+  color: var(--accent-color);
+}
+/* Style site-nav*/
+.site-nav .link {
+  color: var(--title-text-color);
+}
+/* Репета показывал на вебинаре
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}*/
+/* Style contacts-nav*/
+.contacts-nav .link {
+  color: var(--header-contacts-color);
+}
+/* Репета показывал на вебинаре
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}*/
+/*hero*/
+.hero {
+  background-color: var(--background-hero-footer);
+  color: var(--primary-white-main);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero a {
+  text-decoration: none;
+  color: var(--primary-white-main);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  background-color: var(--accent-color);
+}
+/*Все ссылки с классом link получают псевдокласы
+[hover и focus]*/
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+/* Остальные секции*/
+/*Выставляем общие стили для заголовков*/
+.section h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.section h3 {
+  color: var(--title-text-color);
+}
+/*Секция Особенности нашей работы*/
+/* Скрываем заголовок, временно, пока не учили как правильно
+это сделать*/
+.section .invisibile {
+  color: rgba(0, 0, 0, 0);
+}
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*Секция наша команда*/
+.team {
+  background-color: var(--background-team-section);
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/*Footer*/
+.footer {
+  background-color: var(--background-hero-footer);
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-white-main);
+}
+.footer a {
+  color: var(--footer-contacts-rgba-color);
+}
+
+/*Портфолио*/
+/*Временный костыль для скрытия заголовка*/
+.invisible {
+  color: rgba(0, 0, 0, 0);
+}
+
+.portfolio a {
+  text-decoration: none;
+}
+.portfolio li {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--background-team-section);
+  border-radius: 4px;
+}
+button:hover,
+button:focus {
+  color: var(--primary-white-main);
+  background-color: var(--accent-color);
+}
+.portfolio h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2px;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
+}
