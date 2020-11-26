@@ -87,7 +87,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
 }
-.hero a {
+.hero .button {
   text-decoration: none;
   color: var(--primary-white-main);
   font-weight: 700;
